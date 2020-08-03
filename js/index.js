@@ -40,3 +40,25 @@ const siteContent = {
 // Example: Update the img src for the logo
 let logo = document.getElementById("logo-img");
 logo.setAttribute('src', siteContent["nav"]["img-src"])
+
+//Header 
+let headLinks = document.querySelectorAll('.container header nav a');
+
+let navLinkTexts = Object.values(siteContent.nav);
+
+headLinks.forEach((link, i ) => {
+  link.textContent = navLinkTexts[i]
+});
+// CTA 
+let mainImg = document.querySelector('#cta-img');
+mainImg.src = 'img/header-img.png'
+
+
+let cta = document.querySelector('.cta h1')
+cta.innerHTML = 'DOM <br> IS <br> AWSOME';
+
+
+console.log(headLinks)
+
+
+
