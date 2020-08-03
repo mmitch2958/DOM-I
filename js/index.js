@@ -90,5 +90,6 @@ contactP.forEach((link, i) => link.textContent = contContactP[i]);
 
 console.log(mainH4)
 
-
+let navAp = document.createElement('NewLink')
+document.body.appendChild(navAP);
 
